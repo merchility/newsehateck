@@ -16,6 +16,13 @@
     .hero-gradient {
       background: radial-gradient(circle at top right, #ecfeff, #ffffff 70%);
     }
+
+    /* 🔒 Hide any WhatsApp launcher/icons */
+    .woot-widget-bubble [data-channel="whatsapp"],
+    .woot-widget-bubble .whatsapp,
+    a[href*="wa.me"] {
+      display: none !important;
+    }
   </style>
 </head>
 
@@ -29,9 +36,7 @@
     <div class="flex items-center justify-between h-20">
 
       <div class="flex items-center gap-3 cursor-pointer">
-        <div class="w-10 h-10 bg-teal-600 rounded-xl flex items-center justify-center text-white font-bold">
-          S
-        </div>
+        <div class="w-10 h-10 bg-teal-600 rounded-xl flex items-center justify-center text-white font-bold">S</div>
         <span class="font-bold text-xl text-teal-900">SehaTech</span>
       </div>
 
@@ -53,7 +58,7 @@
 <!-- ================= MAIN ================= -->
 <main class="pt-32">
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 <section class="text-center px-6 max-w-5xl mx-auto py-20">
   <span class="inline-block mb-6 px-4 py-1.5 rounded-full bg-teal-50 text-teal-700 text-xs font-bold">
     التحول الرقمي للقطاع الصحي
@@ -83,7 +88,7 @@
   </div>
 </section>
 
-<!-- ================= SERVICES ================= -->
+<!-- SERVICES -->
 <section id="services" class="py-28 max-w-7xl mx-auto px-6">
   <h2 class="text-3xl font-bold mb-4 text-center">خدمات رقمية مصممة للقطاع الصحي</h2>
   <p class="text-slate-500 text-center max-w-2xl mx-auto mb-20 font-light">
@@ -91,98 +96,25 @@
   </p>
 
   <div class="grid md:grid-cols-3 gap-12">
-
     <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
       <h3 class="text-xl font-bold mb-4">Workflow متكامل للعيادة</h3>
-      <p class="text-slate-500 leading-relaxed font-light">
-        بناء مسار رقمي يشمل الاستقبال، جمع البيانات، التوجيه،
-        المتابعة، والتواصل المستمر مع المرضى.
-      </p>
+      <p class="text-slate-500 font-light">بناء مسار رقمي يشمل الاستقبال، جمع البيانات، التوجيه، والمتابعة.</p>
     </div>
 
     <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
       <h3 class="text-xl font-bold mb-4">تثقيف صحي مخصص</h3>
-      <p class="text-slate-500 leading-relaxed font-light">
-        تزويد المرضى بمحتوى صحي مبسط ومناسب لحالتهم
-        لرفع الوعي وتحسين الالتزام بالعلاج.
-      </p>
+      <p class="text-slate-500 font-light">محتوى صحي مبسط ومناسب لحالة كل مريض.</p>
     </div>
 
     <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
       <h3 class="text-xl font-bold mb-4">أتمتة التواصل والمتابعة</h3>
-      <p class="text-slate-500 leading-relaxed font-light">
-        تواصل ذكي عبر الدردشة وواتساب يقلل الضغط على الطاقم
-        ويضمن استجابة سريعة ودقيقة.
-      </p>
+      <p class="text-slate-500 font-light">دردشة ذكية تقلل الضغط على الطاقم وتسرّع الاستجابة.</p>
     </div>
-
-  </div>
-</section>
-
-<!-- ================= WORKFLOW ================= -->
-<section id="workflow" class="py-28 bg-teal-900 text-white rounded-[3rem] mx-4">
-  <div class="max-w-6xl mx-auto px-8">
-
-    <h2 class="text-3xl font-bold mb-6">رحلة المريض الرقمية</h2>
-    <p class="text-teal-200 max-w-3xl mb-20 font-light">
-      نرافق المريض خطوة بخطوة في تجربة صحية أكثر وضوحًا وطمأنينة.
-    </p>
-
-    <div class="grid md:grid-cols-4 gap-12 text-sm">
-
-      <div>
-        <h4 class="font-bold mb-3">1. أول تواصل</h4>
-        <p class="text-teal-200">
-          استقبال ذكي، فهم الاحتياج، وجمع المعلومات الأساسية.
-        </p>
-      </div>
-
-      <div>
-        <h4 class="font-bold mb-3">2. توعية وتوجيه</h4>
-        <p class="text-teal-200">
-          محتوى صحي مخصص يساعد المريض على فهم حالته.
-        </p>
-      </div>
-
-      <div>
-        <h4 class="font-bold mb-3">3. دعم التشخيص</h4>
-        <p class="text-teal-200">
-          تنظيم المعطيات لتسهيل عمل الطبيب ورفع دقة القرار الطبي.
-        </p>
-      </div>
-
-      <div>
-        <h4 class="font-bold mb-3">4. متابعة مستمرة</h4>
-        <p class="text-teal-200">
-          تذكير، تثقيف، ومرافقة بعد الزيارة أو التشخيص.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= VALUE ================= -->
-<section id="value" class="py-28 max-w-6xl mx-auto px-6 text-center">
-  <h2 class="text-3xl font-bold mb-12">القيمة التي نقدمها للعيادة</h2>
-
-  <div class="grid md:grid-cols-3 gap-12 text-slate-600 font-light">
-    <div>تقليل الضغط على الطاقم الإداري والطبي</div>
-    <div>تحسين تجربة المريض وزيادة ثقته</div>
-    <div>رفع جودة التشخيص والمتابعة</div>
-  </div>
-
-  <div class="mt-20">
-    <button onclick="openChatwoot()"
-      class="px-12 py-4 bg-teal-600 text-white rounded-full font-bold hover:bg-teal-700 shadow-lg">
-      تحدث معنا لبناء حل مخصص
-    </button>
   </div>
 </section>
 
 </main>
 
-<!-- ================= FOOTER ================= -->
 <footer class="py-16 border-t border-slate-100 text-center text-slate-400">
   © 2026 SehaTech — الحلول الرقمية للعيادات والمصحات
 </footer>
@@ -208,7 +140,9 @@ function openChatwoot() {
   g.onload=function(){
     window.chatwootSDK.run({
       websiteToken: "WSP9oqKuW18ALUno6fe41kc9",
-      baseUrl: BASE_URL
+      baseUrl: BASE_URL,
+      locale: "ar",
+      hideMessageBubble: false
     });
   };
   s.parentNode.insertBefore(g,s);
